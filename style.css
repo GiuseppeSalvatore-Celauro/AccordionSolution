@@ -1,0 +1,93 @@
+:root{
+    --fontCustom: 'Work Sans', sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --LightPink: hsl(275, 100%, 97%);
+    --GrayishPurple: hsl(292, 16%, 49%);
+    --DarkPurple: hsl(292, 42%, 14%);
+    --fontSize: 16px;
+}
+
+.fs-custom{
+    font-size: 16px;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.font-custom{
+    font-family: var(--fontCustom);
+}
+.text-w{
+    color: var(--White);
+}
+.text-DarkPurple{
+    color: var(--DarkPurple);
+}
+.text-LightPink{
+    color: var(--LightPink);
+}
+.text-GrayishPurple{
+    color: var(--GrayishPurple);
+}
+.bg-w{
+    background-color: var(--White);
+}
+.bg-DarkPurple{
+    background-color: var(--DarkPurple);
+}
+.bg-LightPink{
+    background-color: var(--LightPink);
+}
+.bg-GrayishPurple{
+    background-color: var(--GrayishPurple);
+}
+
+*::before,
+*::after,
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-style: var(--fontCustom);
+    font-size: var(--fontSize);
+}
+
+.bg-img-custom{
+    background-image: url(./media/background-pattern-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+
+@media (min-width: 375px) {
+    .bg-img-custom{
+        background-image: url(./media/background-pattern-mobile.svg);
+    }
+}
+
+.card-custom{
+    background-color: var(--White);
+    border-radius: 15px;
+    padding: 4rem 3rem;
+    margin-top: -10%;
+}
+
+.card-custom,
+.accordion-custom{
+    display: grid;
+    gap: 15px;
+}
+
+.accordionBtn p:hover{
+    cursor: pointer;
+    color: rgb(159, 88, 225);
+}
